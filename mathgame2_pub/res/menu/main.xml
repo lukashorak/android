@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--     <item -->
+<!--         android:id="@+id/action_problem" -->
+<!--         android:orderInCategory="10" -->
+<!--         android:showAsAction="never" -->
+<!--         android:title="@string/action_problem" android:icon="@drawable/ic_problem"/> -->
+    
+     <item
+        android:id="@+id/action_icon"
+        android:orderInCategory="20"
+        android:showAsAction="never"
+        android:title="@string/action_icon" android:icon="@drawable/ic_icon"/>
+     
+      <item
+        android:id="@+id/action_count"
+        android:orderInCategory="30"
+        android:showAsAction="never"
+        android:title="@string/action_count" android:icon="@drawable/ic_count"/>
+      
+       <item
+        android:id="@+id/action_result"
+        android:orderInCategory="40"
+        android:showAsAction="always"
+        android:title="@string/action_result" android:icon="@drawable/ic_result"/>
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/imageButtonAquarium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:contentDescription="@string/icon_aquarium"
+                android:onClick="onClickIconSelection"
+                android:scaleType="fitCenter"
+                android:src="@drawable/aquarium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/imageButtonFlowers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:contentDescription="@string/icon_flowers"
+                android:onClick="onClickIconSelection"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flowers" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/imageButtonCupcakes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:contentDescription="@string/icon_cupcakes"
+                android:onClick="onClickIconSelection"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cupcakes" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/imageButtonBaloons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:contentDescription="@string/icon_baloons"
+                android:onClick="onClickIconSelection"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baloons" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

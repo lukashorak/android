@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/layoutStyleBlackpearl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textViewCountMathExample"
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickExample"
+            android:padding="10dp"
+            android:text="@string/count_question"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyleBlackpearl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editTextDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="40sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyleBlackpearl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/number1"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_1" />
+
+            <Button
+                android:id="@+id/number2"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_2" />
+
+            <Button
+                android:id="@+id/number3"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_3" />
+
+            <Button
+                android:id="@+id/number4"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_4" />
+
+            <Button
+                android:id="@+id/number5"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/number6"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_6" />
+
+            <Button
+                android:id="@+id/number7"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_7" />
+
+            <Button
+                android:id="@+id/number8"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_8" />
+
+            <Button
+                android:id="@+id/number9"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_9" />
+
+            <Button
+                android:id="@+id/number0"
+                style="@style/btnStyleBlackpearl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickNumber"
+                android:text="@string/number_0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/numberOK"
+                style="@style/btnStyleOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:onClick="onClickNumberContinue"
+                android:padding="40dp"
+                android:text="@string/number_OK"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/numberClear"
+                style="@style/btnStyleGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickNumber"
+                android:padding="40dp"
+                android:text="@string/number_Clear"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyleBlackpearl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/linLayoutProblem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="false"
+                android:contentDescription="@string/action_problem"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_problem" />
+
+            <TextView
+                android:id="@+id/tvProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_problem"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutIcon"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="false"
+                android:contentDescription="@string/action_icon"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_choose" />
+
+            <TextView
+                android:id="@+id/tvIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_icon"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutCount"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonCount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="false"
+                android:contentDescription="@string/action_count"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_count" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_count"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutAnswer"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:contentDescription="@string/action_result"
+                android:onClick="onClickNumberContinue"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_problem" />
+
+            <TextView
+                android:id="@+id/tvAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_result"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

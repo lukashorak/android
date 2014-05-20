@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        style="@style/layoutStyleBlackpearl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textViewCountMathExample"
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickExample"
+            android:padding="10dp"
+            android:text="@string/count_question"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonCountPlus"
+            style="@style/btnStyleGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickCountChange"
+            android:padding="10dp"
+            android:text="@string/count_plus"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonIcon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_with_items"
+                android:onClick="onClickCountExit"
+                android:scaleType="fitCenter"
+                android:src="@drawable/empty_fishbowl_m" />
+
+            <Button
+                android:id="@+id/buttonCount"
+                style="@style/btnStyleRed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:minHeight="80dp"
+                android:onClick="onClickCount"
+                android:padding="10dp"
+                android:text="@string/count_count"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCountMinus"
+            style="@style/btnStyleGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickCountChange"
+            android:padding="10dp"
+            android:text="@string/count_minus"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+</LinearLayout>

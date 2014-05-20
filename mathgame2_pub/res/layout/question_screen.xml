@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/layoutStyleBlackpearl"
+        android:layout_width="match_parent"
+        android:layout_height="655dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textViewCountMathExample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickQuestion"
+            android:padding="10dp"
+            android:text="@string/count_question"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/red"
+            android:textSize="125sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyleBlackpearl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal|bottom"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/linLayoutProblem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="false"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_problem" />
+
+            <TextView
+                android:id="@+id/tvProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_problem"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutIcon"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:onClick="onClickQuestion"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_choose" />
+
+            <TextView
+                android:id="@+id/tvIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_icon"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutCount"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonCount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_count" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_count"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutAnswer"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButtonAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_problem" />
+
+            <TextView
+                android:id="@+id/tvAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/action_result"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
