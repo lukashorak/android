@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SettingsActivity" >
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foursquare_checkin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewSpent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foursquare_favorite"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3" >
+
+        <ImageButton
+            android:id="@+id/imageButtonLatte"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:adjustViewBounds="true"
+            android:background="@color/clouds"
+            android:baselineAlignBottom="false"
+            android:contentDescription="@string/latte"
+            android:cropToPadding="false"
+            android:maxWidth="100dp"
+            android:onClick="clickCheckinView"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/latte" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSandwich"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:adjustViewBounds="true"
+            android:background="@color/clouds"
+            android:contentDescription="@string/sandwich"
+            android:maxWidth="100dp"
+            android:onClick="clickCheckinView"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sandwich" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEspresso"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:adjustViewBounds="true"
+            android:background="@color/clouds"
+            android:contentDescription="@string/espesso"
+            android:maxWidth="100dp"
+            android:onClick="clickCheckinView"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/espresso" />
+
+        <ImageButton
+            android:id="@+id/imageButtonToC"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@color/clouds"
+            android:contentDescription="@string/tea_or_coffee"
+            android:maxWidth="100dp"
+            android:onClick="clickCheckinView"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tea_or_coffee_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButtonBagel"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:background="@color/clouds"
+            android:contentDescription="@string/bagel"
+            android:cropToPadding="false"
+            android:maxWidth="100dp"
+            android:onClick="clickCheckinView"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bagel" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" >
+
+        <EditText
+            android:id="@+id/editTextMoneySpend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ntd"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/btnStyleOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:onClick="clickConfirmCheckin"
+        android:text="@string/confirm" />
+
+</LinearLayout>

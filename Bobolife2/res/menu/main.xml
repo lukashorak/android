@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_foursquarecheckin"
+        android:onClick="menuF2Checkin"
+        android:orderInCategory="10"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_foursquarecheckin"/>
+    <item
+        android:id="@+id/action_statistics"
+        android:onClick="menuStatistics"
+        android:orderInCategory="20"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_statistics"/>
+    <item
+        android:id="@+id/action_settings"
+        android:onClick="menuSettings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

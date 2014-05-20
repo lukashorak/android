@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BoboLife</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_statistics">Statistics</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tea">Tea</string>
+    <string name="coffee">Coffee</string>
+    <string name="tea_or_coffee">Did you drink tea or coffee this morning?</string>
+    <string name="data">Past Records</string>
+    <string name="confirm">Confirm</string>
+    <string name="workQuestion1">How was your day at work?</string>
+    <string name="workGood">Good</string>
+    <string name="workOk">OK</string>
+    <string name="workBad">Bad</string>
+    <string name="synchronize">Sync</string>
+    <string name="tea_or_coffee_alarm_time">Tea or Coffee Alarm time</string>
+    <string name="work_alarm_time">Work Review Alarm time</string>
+    <string name="to_decide">Yet to decide</string>
+    <string name="statistics_work">Work satisfaction</string>
+    <string name="statistics_tea_or_coffee">Tea or Coffee</string>
+    <string name="foursquare_checkin">You checked in:</string>
+    <string name="foursquare_favorite">Favorite cafe</string>
+    <string name="ntd">NT&#36;</string>
+    <string name="action_foursquarecheckin">F2Checkin</string>
+    <string name="latte">Latte</string>
+    <string name="espesso">Espresso</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="bagel">Bagel</string>
+    <string name="day_monday">M</string>
+    <string name="day_tuesday">T</string>
+    <string name="day_wednesday">W</string>
+    <string name="day_thursday">T</string>
+    <string name="day_friday">F</string>
+    <string name="day_saturday">S</string>
+    <string name="day_sunday">S</string>
+    <string name="spent">Spent</string>
+
+</resources>
